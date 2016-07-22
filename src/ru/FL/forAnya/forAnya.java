@@ -8,11 +8,6 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 
-/**
- * Created by F4keFLy on 18.12.2015.
- * fL
- */
-
 public class forAnya
 {
     public static void main(String[] args)
@@ -36,7 +31,7 @@ public class forAnya
 
         frame()
         {
-            super("Рассчёт успеваемости");
+            super("ГђГ Г±Г±Г·ВёГІ ГіГ±ГЇГҐГўГ ГҐГ¬Г®Г±ГІГЁ");
 
             setLayout(new GridBagLayout());
             BgPanel pn = new BgPanel();
@@ -44,24 +39,24 @@ public class forAnya
             Container cont = getContentPane();
             cont.setLayout(new GridBagLayout());
 
-            begin = new JLabel("<html>Здравствуйте, милейшая учительница!<br>" +
-                                    "Пожалуйста, введите данные для рассчёта.</html>");
+            begin = new JLabel("<html>Г‡Г¤Г°Г ГўГ±ГІГўГіГ©ГІГҐ, Г¬ГЁГ«ГҐГ©ГёГ Гї ГіГ·ГЁГІГҐГ«ГјГ­ГЁГ¶Г !<br>" +
+                                    "ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , ГўГўГҐГ¤ГЁГІГҐ Г¤Г Г­Г­Г»ГҐ Г¤Г«Гї Г°Г Г±Г±Г·ВёГІГ .</html>");
 
             begin.setHorizontalAlignment(JLabel.CENTER);
             begin.setFont(new Font("Verdana", Font.BOLD, 12));
             begin.setForeground(Color.white);
 
-            sum = new JLabel("Всего");
+            sum = new JLabel("Г‚Г±ГҐГЈГ®");
             five = new JLabel("'5'");
             fore = new JLabel("'4'");
             three = new JLabel("'3'");
             two = new JLabel("'2'");
-            na = new JLabel("н/а");
+            na = new JLabel("Г­/Г ");
 
-            progress = new JLabel("Успеваемость:");
-            quality = new JLabel("Качество:");
-            SOU = new JLabel("СОУ:");
-            GPA = new JLabel("Средний балл:");
+            progress = new JLabel("Г“Г±ГЇГҐГўГ ГҐГ¬Г®Г±ГІГј:");
+            quality = new JLabel("ГЉГ Г·ГҐГ±ГІГўГ®:");
+            SOU = new JLabel("Г‘ГЋГ“:");
+            GPA = new JLabel("Г‘Г°ГҐГ¤Г­ГЁГ© ГЎГ Г«Г«:");
             getProgress = new JLabel("0,00%");
             getQuality = new JLabel("0,00%");
             getSOU = new JLabel("0,00%");
@@ -74,7 +69,7 @@ public class forAnya
             e = new JTextField(2);
             f = new JTextField(2);
 
-            go  = new JButton("Рассчитать");
+            go  = new JButton("ГђГ Г±Г±Г·ГЁГІГ ГІГј");
             go.setForeground(Color.BLACK);
 
             p1 = new JPanel(); p3 = new JPanel();
@@ -154,7 +149,7 @@ public class forAnya
                     getSOU.setText(String.valueOf(form.format((bb*100+cc*64+dd*36+ee*16+ff*7)/aa)+"%"));
                     getGPA.setText(String.valueOf(form.format(((bb*5+cc*4+dd*3+ee*2)/(bb+cc+dd+ee)))));
                 }else{
-                    JOptionPane.showMessageDialog(null,"Бестолочь, проверь введённые данные!");
+                    JOptionPane.showMessageDialog(null,"ГЃГҐГ±ГІГ®Г«Г®Г·Гј, ГЇГ°Г®ГўГҐГ°Гј ГўГўГҐГ¤ВёГ­Г­Г»ГҐ Г¤Г Г­Г­Г»ГҐ!");
                 }
 
             });
