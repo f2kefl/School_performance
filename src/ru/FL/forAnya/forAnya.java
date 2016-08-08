@@ -9,23 +9,22 @@ import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 
 /**
- * Created by F4keFLy on 18.12.2015.
- * fL
+ * Created by FL on 18.12.2015.
  */
 
 public class forAnya
 {
     public static void main(String[] args)
     {
-        frame frame = new frame();
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setResizable(false);
-        frame.setLocationRelativeTo(null);
-        frame.setSize(new Dimension(350, 320));
-        frame.setVisible(true);
+        Frame frame = new Frame();
+        Frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        Frame.setResizable(false);
+        Frame.setLocationRelativeTo(null);
+        Frame.setSize(new Dimension(350, 320));
+        Frame.setVisible(true);
     }
 
-    public static class frame extends JFrame
+    public static class Frame extends JFrame
     {
         private JLabel begin;
         private JLabel[] labels;
@@ -35,7 +34,7 @@ public class forAnya
         private JButton go;
         private double aa, bb, cc, dd, ee, ff;
 
-        frame()
+        Frame()
         {
             super("Рассчёт успеваемости");
 
